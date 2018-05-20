@@ -1,0 +1,23 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>guardados</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <ion-list>
+    <ion-item>
+      <button ion-item *ngFor="let histori of historial; let i = index" (click)="abrirScan(i)">
+        {{histori.info }}abrirScan
+        <p>
+          {{histori.tipo}}
+        </p>
+      </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
